@@ -10,7 +10,7 @@ docker build -t chr7 .
 docker run -d --name chr7 --restart unless-stopped \
     -v chr-data:/chr \
     -p 8291:8291 \
-    -p 808:80 \
+    -p 80:80 \
     -p 443:443 \
     -p 2222:22 \
     -p 531:53/tcp \
