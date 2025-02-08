@@ -9,7 +9,7 @@ docker build -t chr7 .
 # Jalankan container dengan semua port yang dipetakan
 docker run -d --name chr7 --restart unless-stopped \
     -v chr-data:/chr \
-    -p 8291:8291 \
+    -p 5788:8291 \
     -p 80:80 \
     -p 443:443 \
     -p 2222:22 \
